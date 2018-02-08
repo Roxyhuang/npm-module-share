@@ -5,7 +5,6 @@ import HtmlWebpackPlugin from 'html-webpack-plugin';
 const webpackConfig = {
   entry: {
     main: "./src/root.js",
-    // common: ["./vendor"] // optional
   },
   resolve: {
     extensions: [" ", '.js', '.jsx', '.css', '.less'],

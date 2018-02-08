@@ -12,9 +12,7 @@ const execPath = path.resolve('../');
 
 const preListObj = preList.devDependenciesGlobal;
 
-const preListObjArray = Object.keys(preListObj);
-
-const isFirst = !fs.existsSync(`${execPath}/package.json`);
+const isFirst = !fs.existsSync(`${execPath}/package .json`);
 
 const currentMd5 = md5(JSON.stringify(preListObj));
 

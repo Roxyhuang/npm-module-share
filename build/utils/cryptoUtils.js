@@ -7,7 +7,6 @@ const md5 = function (str) {
   return str;
 };
 
-
 module.exports = {
   md5,
 };
