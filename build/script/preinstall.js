@@ -12,7 +12,7 @@ const execPath = path.resolve('../');
 
 const preListObj = preList.devDependenciesGlobal;
 
-const isFirst = !fs.existsSync(`${execPath}/package .json`);
+const isFirst = !fs.existsSync(`${execPath}/package.json`);
 
 const currentMd5 = md5(JSON.stringify(preListObj));
 
@@ -29,6 +29,7 @@ if (isFirst){
 } else {
   console.log('will check update');
   const lastVersion = require(`${execPath}/package.json`).md5;
+
   if (lastVersion !== currentMd5) {
     fs.writeFileSync(`${execPath}/package.json`, JSON.stringify({"md5": currentMd5,dependencies: preListObj}));
     isUpdate = true;
