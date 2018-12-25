@@ -1,0 +1,39 @@
+{
+  "env": {
+    "browser": true,
+    "commonjs": true,
+    "es6": true
+  },
+  "settings": {
+    "import/resolver": {
+      "node": {
+        "moduleDirectory": ["node_modules", "src"]
+      }
+    }
+  },
+  "globals": {
+    "__CONFIG__": true,
+    "__ENV__": true,
+    "Vue": true
+  },
+  "extends": ["plugin:vue/essential", "airbnb-base"],
+  "plugins": [
+    "vue"
+  ],
+  // Rule changes from Airbnb"s eslint config
+  "rules": {
+    "import/no-unresolved": 0,
+    "new-cap": 0,
+    "global-require": 0,
+    "no-underscore-dangle": 0,
+    "arrow-body-style": 0,
+    "no-console": 0,
+    "import/prefer-default-export": 0,
+    "comma-dangle": [2, "always-multiline"],
+    "import/no-extraneous-dependencies": [0],
+    "import/extensions": ["off", "always", {
+      "js": "never",
+      "vue": "never"
+    }]
+  }
+}
