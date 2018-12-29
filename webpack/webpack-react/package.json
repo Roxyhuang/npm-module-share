@@ -12,6 +12,9 @@
     "react": "~0.13.x || ~0.14.x || 15.0.0 || ~16.x.x"
   },
   "devDependencies": {
+    "webpack-dev-server": "3.1.0"
+  },
+  "devDependenciesGlobal": {
     "autoprefixer": "9.1.5",
     "babel-core": "^6.5.2",
     "babel-loader": "^6.2.1",
@@ -62,11 +65,7 @@
     "webpack-bundle-analyzer": "3.0.2",
     "webpack-cleanup-plugin": "0.5.1",
     "webpack-cli": "3.1.1",
-    "webpack-dev-server": "3.1.0",
     "webpack-hot-middleware": "2.21.1"
-  },
-  "devDependenciesGlobal": {
-
   },
   "scripts": {
     "start": "webpack-dev-server --mode development --hot --progress --colors --port 3000 --open"

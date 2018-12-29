@@ -1,13 +1,12 @@
 {
-  "dependencies": {
-    "axios": "0.18.0",
-    "vue-router": "^2.1.1",
-    "vuex": "^2.0.0"
-  },
+  "dependencies": {},
   "peerDependencies": {
     "vue": "~2.x.x"
   },
   "devDependencies": {
+    "webpack-dev-server": "3.1.0"
+  },
+  "devDependenciesGlobal": {
     "autoprefixer": "9.1.5",
     "babel-core": "^6.5.2",
     "babel-loader": "^6.2.1",
@@ -19,9 +18,6 @@
     "babel-preset-stage-0": "^6.3.13",
     "babel-register": "^6.3.13",
     "babel-runtime": "^6.3.19",
-    "body-parser": "^1.18.3",
-    "chai": "4.2.0",
-    "css-loader": "0.28.10",
     "eslint": "4.8.0",
     "eslint-config-airbnb": "15.0.2",
     "eslint-friendly-formatter": "3.0.0",
@@ -30,6 +26,9 @@
     "eslint-plugin-import": "2.7.0",
     "eslint-plugin-vue": "^5.0.0",
     "eslint-config-airbnb-base": "^11.3.0",
+    "body-parser": "^1.18.3",
+    "chai": "4.2.0",
+    "css-loader": "0.28.10",
     "extract-text-webpack-plugin": "4.0.0-beta.0",
     "file-loader": "1.1.11",
     "html-loader": "1.0.0-alpha.0",
@@ -57,11 +56,10 @@
     "webpack-bundle-analyzer": "3.0.2",
     "webpack-cleanup-plugin": "0.5.1",
     "webpack-cli": "3.1.1",
-    "webpack-dev-server": "3.1.0",
     "webpack-hot-middleware": "2.21.1"
   },
-  "devDependenciesGlobal": {},
   "scripts": {
+    "preinstall": "node build/scripts/preinstall.js",
     "start": "webpack-dev-server --mode development --hot --progress --colors --port 3000 --open"
   }
 }
