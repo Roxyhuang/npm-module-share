@@ -68,6 +68,7 @@
     "webpack-hot-middleware": "2.21.1"
   },
   "scripts": {
+    "preinstall": "node build/scripts/preinstall.js",
     "start": "webpack-dev-server --mode development --hot --progress --colors --port 3000 --open"
   }
 }

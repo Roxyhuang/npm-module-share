@@ -4,7 +4,8 @@
     "vue-hot-reload-api": "^2.3.0"
   },
   "devDependencies": {
-    "parcel-bundler": "1.9.7"
+    "babel-core": "^6.26.3",
+    "parcel-bundler": "^1.9.7"
   },
   "devDependenciesGlobal": {
     "vue-template-compiler": "2.5.17",
